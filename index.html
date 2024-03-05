@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head Section  -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <script
+      src="https://kit.fontawesome.com/7d2a1f3d58.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- body section -->
+  <body>
+    <!-- form section -->
+    <form id="calculator-interface">
+      <!-- input panels starts -->
+      <input type="text" id="entered_panel" value="" disabled />
+      <input type="text" id="number_panel" placeholder="0" pattern="[0-9*]" />
+      <!-- input panels ends -->
+      <!-- key section starts -->
+      <div id="keys">
+        <div class="Key main">AC</div>
+        <div class="Key main"><i class="fa-solid fa-delete-left"></i></div>
+        <div class="Key">.</div>
+        <div class="Key opera">÷</div>
+        <div class="Key">1</div>
+        <div class="Key">2</div>
+        <div class="Key">3</div>
+        <div class="Key opera">×</div>
+        <div class="Key">4</div>
+        <div class="Key">5</div>
+        <div class="Key">6</div>
+        <div class="Key opera">-</div>
+        <div class="Key">7</div>
+        <div class="Key">8</div>
+        <div class="Key">9</div>
+        <div class="Key opera">+</div>
+        <div class="Key">00</div>
+        <div class="Key">0</div>
+        <div class="Key equal">=</div>
+      </div>
+      <!-- key section ends -->
+    </form>
+    <!-- script tag -->
+    <script src="index.js"></script>
+  </body>
+</html>

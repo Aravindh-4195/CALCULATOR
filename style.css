@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+}
+/* calculaor interface */
+#calculator-interface {
+  height: 550px;
+  width: 350px;
+  margin-top: 100px;
+  border: 1px solid;
+  border-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.379) inset;
+}
+/* input panels */
+#number_panel {
+  position: relative;
+  top: 30px;
+  left: 8px;
+  border-radius: 5px;
+  border: none;
+  height: 60px;
+  width: 92%;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  text-align: right;
+  background-color: rgb(36, 34, 34);
+}
+#entered_panel {
+  position: relative;
+  top: 20px;
+  background-color: transparent;
+  border: none;
+  height: 50px;
+  width: 92%;
+  left: 8px;
+  text-align: right;
+  color: white;
+}
+/* key board section */
+#keys {
+  position: relative;
+  top: 80px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-around;
+  row-gap: 10px;
+}
+.Key {
+  height: 60px;
+  width: 60px;
+  border: 1px solid;
+  border-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px white inset;
+  font-size: 25px;
+}
+.Key:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+.equal {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  width: 160px;
+  border-color: orange;
+  box-shadow: 1px 1px 20px orange inset;
+}
+.main {
+  border-color: red;
+  box-shadow: 1px 1px 15px red inset;
+}
+.opera {
+  border-color: green;
+  box-shadow: 1px 1px 15px green inset;
+  font-size: 30px;
+  font-weight: bold;
+}
